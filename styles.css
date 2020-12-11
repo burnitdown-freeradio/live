@@ -22,7 +22,7 @@ h2{
 }
 
 copyleft {
-  font: 18px Arial, sans-serif;
+  font: 30px Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
   display: inline-block;
   transform: rotate(180deg);
 }
