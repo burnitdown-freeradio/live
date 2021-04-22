@@ -10,6 +10,8 @@
 <meta name="author" content="Burn It Down"/>
 <link href="styles.css" rel="stylesheet" type="text/css" media="screen">	
 <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type='text/javascript'>function toggleDiv(id) {    var div = document.getElementById(id);    div.style.display = div.style.display == 'none' ? 'block' : 'none';}function playing(mountpoint) {    var url = './playing.php?mp=burnitdown.mp3';    $.get(url, '',          function(item, status){            if ( status == 'success')            {               $('#playing').html(item)            }          }    );    setTimeout(function(){ playing(); }, 3000);}playing();</script>
 </head>
 
 <body>
@@ -23,6 +25,14 @@ Abolitionist Free Radio" width="400" title="BURN IT DOWN Abolitionist Free Radio
 	Error: your web browser does not support this audio player.
 		  </audio></td>
 	  </tr>
+	
+	<body height=50px style='color:rgb(255, 255, 0);background-color:rgb(99, 129, 130);margin:5px;' >
+
+<center><div style='height:50px;'><br/>http://giss.tv:8000/burnitdown.mp3</div><div id='playing'></div><div id='details'><img onClick='javascript:toggleDiv("infos");' width=20px height=20px src='../../img/cog.png' /></div><div id='infos'><b>Agent</b> : butt 0.1.29<br/><b>Type</b> : audio/mpeg<br/></div><div style='height:200px;z-index:50;'><br/><br/><br/><br/><br/><br/><audio controls autoplay><source src='http://giss.tv:8000/burnitdown.mp3'></audio>
+
+</div>
+
+</center>
     <br>
 	<br>
 	<tr><td colspan="3"><a href="http://giss.tv:8000/burnitdown.mp3" title="PLAY Radio!" target="new" style="font-weight: bold; font-size: 14px;">http://giss.tv:8000/burnitdown.mp3</a><br>
