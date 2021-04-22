@@ -12,28 +12,6 @@
 <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
 	<script type='text/javascript' src='js/jquery.min.js'></script>
 	
-
-<script type='text/javascript' src='js/jquery.min.js'></script>
-<script type='text/javascript'>
-function getStats() {
-    var url = '../gstats/genstats-channel.php?mount=burnitdown.mp3';
-    $.get(url, '',
-          function(data, status){
-            if ( status == 'success')
-            {
-               $('#stats').html(data)
-            }
-          }
-    );
-    setTimeout(getStats, 60000); // each minute
-}
-
-$( document ).ready(function() {
-    getStats();
-});
-
-</script>
-	
 </head>
 
 <body>
@@ -47,9 +25,6 @@ Abolitionist Free Radio" width="400" title="BURN IT DOWN Abolitionist Free Radio
 	Error: your web browser does not support this audio player.
 		  </audio></td>
 	  </tr>
-	
-	<td width=40%>
-<center><div><iframe width=400px height=300px src='../uniplay/html5/html5.php?url=http://giss.tv:8000/burnitdown.mp3'></iframe><center></div>      </td>
     <br>
 	<br>
 	<tr><td colspan="3"><a href="http://giss.tv:8000/burnitdown.mp3" title="PLAY Radio!" target="new" style="font-weight: bold; font-size: 14px;">http://giss.tv:8000/burnitdown.mp3</a><br>
